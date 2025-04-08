@@ -1,492 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Steller landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Steller Landing page | Free Bootstrap 4.1 landing page</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Steller main styles -->
-	<link rel="stylesheet" href="assets/css/steller.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
-                    </li>                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testmonial">Testmonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="- btn btn-primary rounded ml-4" href="components.html">Copmonents</a>
-                    </li>
-                </ul>
-            </div>
-        </div>          
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vikas Reddy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <!-- End of page navibation -->
-
-    <!-- Page Header -->
-    <header class="header" id="home">
-        <div class="container">
-            <div class="infos">
-                <h6 class="subtitle">hello,I'm</h6>
-                <h6 class="title">James Smith</h6>
-                <p>UI/UX Designer</p>
-
-                <div class="buttons pt-3">
-                    <button class="btn btn-primary rounded">HIRE ME</button>
-                    <button class="btn btn-dark rounded">DOWNLOAD CV</button>
-                </div>      
-
-                <div class="socials mt-4">
-                    <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                    <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
-                    <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
-                    <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
-                </div>
-            </div>              
-            <div class="img-holder">
-                <img src="assets/imgs/man.svg" alt="">
-            </div>      
-        </div>  
-
-        <!-- Header-widget -->
-        <div class="widget">
-            <div class="widget-item">
-                <h2>124</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div class="widget-item">
-                <h2>456</h2>
-                <p>Project Completed</p>
-            </div>
-            <div class="widget-item">
-                <h2>789</h2>
-                <p>Awards Won</p>
-            </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Vikas Reddy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
-    <!-- End of Page Header -->
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/11zon_cropped.png" alt="Vikas Reddy profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vikas Reddy</h1>
+        <p class="section__text__p2">AI Enthusiast and Software Developer </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Vikas_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vikasreddyvenkannagari/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/vvikasreddy'"
+          />
+          
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      /> -->
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/rounded.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Research Experience: 1+ years</h3>
+            <ul style="list-style: none; padding: 0; margin: 10px 0;">
+              <li style="margin-bottom: 10px;">
+                <span style="font-weight: bold; margin-right: 10px;">&#8226</span>
+                <strong>Research Assistant, UMBC</strong>
+                <div style="margin-left: 20px;">January 2024 - Present</div>
+              </li>
+            </ul>
+
+            <h3>Industry Experience: almost 1+ years</h3>
+            <ul style="list-style: none; padding: 0; margin: 10px 0;">
+              <li style="margin-bottom: 10px;">
+                <span style="font-weight: bold; margin-right: 10px;">&#8226</span>
+                <strong>SDE Intern, EPAM Systems</strong>
+                <div style="margin-left: 20px;">January 2023 - June 2023</div>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <span style="font-weight: bold; margin-right: 10px;">&#8226</span>
+                <strong>Data Analyst, IIIT Hyderabad</strong>
+                <div style="margin-left: 20px;">March 2022 - June 2022</div>
+              </li>
+            </ul>
+
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+             <!-- Education Section -->
+                <h3>Education</h3>
+                <ul style="list-style: none; padding: 0; margin: 10px 0;">
+                  <li style="margin-bottom: 10px;">
+                    <span style="font-weight: bold; margin-right: 10px;">&#8226;</span> <!-- Bold bullet point using Unicode character -->
+                    <strong>Bachelor's Degree</strong>
+                    <div style="margin-left: 20px;">B.Sc. in Computer Science and Technology</div>
+                  </li>
+                  <li style="margin-bottom: 10px;">
+                    <span style="font-weight: bold; margin-right: 10px;">&#8226;</span> <!-- Bold bullet point using Unicode character -->
+                    <strong>Master's Degree</strong>
+                    <div style="margin-left: 20px;">M.Sc. in Data Science</div>
+                  </li>
+                </ul>
+                
+                
+            </div>
+          </div>
+          <div class="text-container" style="margin-top: 20px;">
+            <p>
+              <p>
+                As a <strong>passionate Data Scientist</strong> and <strong>Software Developer</strong>, I strive to make 
+                <strong>Artificial Intelligence</strong> accessible to everyone.  
+                Backed by a strong academic foundation in <strong>Computer Science</strong> and <strong>Data Science</strong> from 
+                UMBC, I specialize in <strong>Deep Learning</strong>, <strong>Signal Processing</strong>, and <strong>Machine Learning</strong>.  
+                My work spans developing <em>cutting-edge emotion detection systems</em>, designing <em>innovative EEG applications</em>, 
+                and building <strong>scalable multilingual data pipelines</strong>`.  
+                With a focus on bridging the gap between <strong>advanced AI technologies</strong> and <em>real-world impact</em>, 
+                I’m committed to transforming complex ideas into solutions that matter. Let’s collaborate to create 
+                something extraordinary together!
+              </p>
+              
+            </p>
+            
+          </div>
+        </div>
+      </div>
+     
+    </section>
+     <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+                
+              </article>
+              <div class="skills-list">
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Languages</h3>
+                <p class="skill-details">Python, Java, C++, SQL, JavaScript</p>
+              </div>
+
+                <div class="sub-container">
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <h3>Frameworks</h3>
+                  <p class="skill-details">Flask, Django, Node.js, Express.js</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>  -->
+            
+    <!-- <div class="sub-container">
+      <img
+        src="./assets/checkmark.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <h3>wh22215@umbc.edu</a></h3>
+      <span class="skill-details">Python, Java, C++, SQL, JavaScript</span>
+    </div> -->
+
     
-    <!-- About section -->
-    <section id="about" class="section mt-3">
-        <div class="container mt-5">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="img-thumbnail mb-4">
-                </div>
-                <div class="pl-md-4 col-md-9">
-                    <h6 class="title">James Smith</h6>
-                    <p class="subtitle">UI/UX Designer</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod, magni magnam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur ullam voluptatum asperiores.</p>
-                    <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                   
-                </div>
+    <section id="skills">
+
+      <p class="section__text__p1">Discover My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="sections-wrapper">
+         
+          <div class="details-container">
+            <div class="sub-container section-title">
+               <h2 class = "experience-sub-title  ">Software Development</h2>
             </div>
+
+            <div class="skills-list">
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Languages</h3>
+                <p class="skill-details">Python, Java, C#, SQL, JavaScript, HTML, CSS</p>
+              </div>
+
+                <div class="sub-container">
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <h3>Frameworks</h3>
+                  <p class="skill-details">Flask, Django, React.js, Angular, Bootstrap, Spring Boot</p>
+                </div>
+
+                <div class="sub-container">
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <h3>DevOps Tools</h3>
+                  <span class="skill-details">Git, Docker, Jenkins, Kubernetes, Postman, Swagger</span>
+                </div>
+
+                <div class="sub-container">
+                  <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                  <h3>Cloud Platforms</h3>
+                  <span class="skill-details">AWS, Microsoft Azure, GCP</span>
+                </div>
+
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Others:</h3>
+                <span class="skill-details">Agile Methodologies, REST API Design, Software Testing (Selenium, TestNG), Debugging</span>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="details-container">
+            <div class="sub-container section-title">
+              <h2>Data Science and AI</h2>
+            </div>
+             
+            <div class="skills-list">
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Statistical Modeling</h3>
+                <span class="skill-details"> Regression, Classification, Clustering, Dimensionality Reduction, Bayesian Inference</span>
+              </div>
+
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Data Analysis</h3>
+                <span class="skill-details">Data Cleaning, Visualization, Exploratory Data Analysis (EDA), Statistical Modeling</span>
+              </div>
+
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Machine Learning Frameworks</h3>
+                <span class="skill-details">scikit-learn, XGBoost, LightGBM, TensorFlow, PyTorch, Keras</span>
+              </div>
+              
+              <!-- <div class="sub-container">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <h3>LLM's (Large Language Models)</h3>
+              <span class="skill-details">Pretraining and fine-tuning LLM's (e.g., BERT, GPT), Prompt Engineering, Zero-shot and Few-shot Learning</span>
+            </div> -->
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Deep learning</h3>
+                <span class="skill-details">Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), Transformer Models, Autoencoders, Pretraining and fine-tuning LLM's</span>
+              </div> 
+
+              <div class="sub-container">
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <h3>Big Data</h3>
+                <span class="skill-details">Apache Spark, Hadoop, Kafka</span>
+              </div>
+              
+            </div>
+          </div>
         </div>
+        
+      </div>
+      
+    <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+    /> -->
     </section>
 
-    <!-- Service section -->
-    <section id="service" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Service</h6>
-            <h6 class="section-title mb-4">What I Do</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-crown"></i>
-                            <h5>UI/UX Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-desktop"></i>
-                            <h5>Web Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-mobile"></i>
-                            <h5>App Design</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3 mb-4">
-                    <div class="custom-card card border">
-                        <div class="card-body">
-                            <i class="icon ti-bar-chart"></i>
-                            <h5>SEO</h5>
-                        </div>
-                    </div>
-                </div>
+   <!-- <div class="details-container2 color-container">
+            <div class="article-container">
+              <img src="./assets/project.png" alt="Skill icon" class="icon1" />
+                <h3>Lexically constrained Beam</h3>
+              <p class="project-description">
+                <strong>📖 Overview:</strong> This project explores <em>lexically constrained beam search</em>, inspired by the algorithm 
+                presented in Hokamp and Liu’s paper. The goal is to enhance machine translation by incorporating 
+                contextually relevant constraints to guide the translation process. This method ensures that specific 
+                words or phrases appear in the output while keeping the model parameters unchanged.
+              </p>
             </div>
-        </div>
-    </section>
-    <!-- End of Sectoin -->
-
-    <!-- Skills section -->
-    <section class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">Why Choose me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="row text-left">
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Photoshop</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">Web Design</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">App Design</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <h6 class="mb-3">SEO</h6>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <!-- End of Skills sections -->
-
-    <!-- Portfolio section -->
-    <section id="portfolio" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-1.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-2.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-3.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-4.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-5.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/folio-6.jpg" alt="">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Project Title</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
-                        </div>
-                    </div>                  
-                </div>
+            
+            <div class="btn-container" style="text-align: center; margin-top: 20px;">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
             </div>
-
-        </div>
-    </section>
-    <!-- End of portfolio section -->
-
-    <!-- Testmonial Section -->
-    <section id="testmonial" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">Testmonial</h6>
-            <h6 class="section-title mb-4">What People Say About Me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-1.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                                <h1 class="title">Emma Re</h1>
-                                <h1 class="subtitle">Graphic Designer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-2.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                                <h1 class="title">James Bert</h1>
-                                <h1 class="subtitle">Web Designer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card testmonial-card border">
-                            <div class="card-body">
-                                <img src="assets/imgs/avatar-3.jpg" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                                <h1 class="title">Michael Abra</h1>
-                                <h1 class="subtitle">Web Developer</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div> -->   
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        
+        <div class="about-containers ">
+          <div class="details-container2 color-container">
+            <div class="article-container sub-container">
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" />
+              <h2 class="experience-sub-title project-title">Constrained Beam-Search</h2> -->
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" /> -->
+              <h2 class="experience-sub-title project-title">Lexically Constrained Beam Search</h2>
+              <p style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 15px;">
+                <strong>📖 Overview:</strong> This project implements the <em>lexically constrained beam search</em> algorithm, as 
+                presented in the research paper by Hokamp and Liu. The goal is to enhance Turkish-to-English machine translation 
+                by ensuring specific words or phrases are included in the translated output. This approach improves the control over 
+                translation outputs, making them more aligned with user-defined lexical requirements.            </p>
+              </p>
+            
             </div>
-        </div>
-    </section>
-    <!-- End of testmonial section -->
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container text-center">
-            <h6 class="subtitle">My Blogs</h6>
-            <h6 class="section-title mb-4">Latest News</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="row text-left">
-                <div class="col-md-4">
-                    <div class="card border mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Designe for Everyone</h5>
-                            <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Layouts</h5>
-                            <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border mb-4">
-                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootstrap Framework</h5>
-                            <div class="post-details">
-                                <a href="javascript:void(0)">Posted By: Admin</a>
-                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i> 456</a>
-                                <a href="javascript:void(0)"><i class="ti-comment"></i> 123</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi.</p>
-                            <a href="javascript:void(0)">Read More..</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="btn-container" style="text-align: center; margin-top: 20px;">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/vvikasreddy/lexically_constrained_beam_search_'"
+              >
+                Github
+              </button>
+              <button class="arrow next">→</button>
             </div>
-        </div>
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container sub-container">
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" /> -->
+              <h2 class="experience-sub-title project-title">EEG P300-Detection (Lie-detection)</h2>
+              <p style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 15px;">
+                📖 Overview: This project detects deception using brain waves, specifically the <em>P300 
+                  response</em>, through <em>EEG signals</em>. By analyzing these brain patterns, 
+                  the system identifies lies and concealed information. It processes EEG data, balances 
+                  datasets, and applies machine learning models for accurate detection. This non-invasive 
+                  method offers an alternative to traditional lie detection techniques.            </p>
+            
+              
+            </div>
+            <div class="btn-container" style="text-align: center; margin-top: 20px;">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/VinjamuriLab/P300-LieDetection'"
+              >
+                Under Peer review
+              </button>
+            </div>
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container sub-container">
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" />
+              <h2 class="experience-sub-title project-title">Constrained Beam-Search</h2> -->
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" /> -->
+              <h3 class="experience-sub-title project-title">EEG Emotion-recognition</h2>
+              <p style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 15px;">
+                <strong>📖 Overview:</strong> We developed an end-to-end deep learning network that 
+                combines facial expressions and neurophysiological (<em>EEG</em>) signals for emotion 
+                recognition. Using transformers and deep neural networks, the model captures complex 
+                patterns, enhancing classification accuracy. Validated on the DEAP dataset, it achieved 
+                97.64%, 97.78% accuracy for valence and arousal respectively. This work was accepted at 
+                the BSN conference, IEEE.            </div>
+            <div class="btn-container" style="text-align: center; margin-top: 20px;">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://ieeexplore.ieee.org/document/10780554'"
+              >
+                IEEE
+              </button>
+              <button class="arrow next">→</button>
+            </div>
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container sub-container">
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" />
+              <h2 class="experience-sub-title project-title">Constrained Beam-Search</h2> -->
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" /> -->
+              <h3 class="experience-sub-title project-title">US Government Contract Analysis</h2>
+              <p style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 15px;">
+                <strong>📖 Overview:</strong> This project analyzes U.S. government contract opportunities
+                 using data from official government websites. It employs preprocessing and visualization 
+                 techniques to identify trends in government contracting. By examining contract amounts, 
+                 locations, and industries, the project helps stakeholders make informed decisions about 
+                 key opportunities.              </p>
+            </div>
+            <div class="btn-container" style="text-align: center; margin-top: 20px;">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/vvikasreddy/US_Government_Contract_Opportunties_analysis'"
+              >
+                Github
+              </button>
+              <button class="arrow next">→</button>
+            </div>
+          </div>
+          <div class="details-container2 color-container">
+            <div class="article-container sub-container">
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" />
+              <h2 class="experience-sub-title project-title">Constrained Beam-Search</h2> -->
+              <!-- <img src="./assets/project.png" alt="Skill icon" class="icon" /> -->
+              <h3 class="experience-sub-title project-title">Bitcoin Price Prediction</h2>
+              <p style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 15px;">
+                <strong>📖 Overview:</strong> Engineered and deployed an LSTM-based deep learning model for stock price prediction, ensuring 84.39% of
+                predictions were within ±10% accuracy of the true values, demonstrating robust forecasting capabilities. Optimized the model’s performance through data preprocessing, hyperparameter tuning, and cross-validation,
+                effectively addressing time-series challenges in financial datasets.        </p>
+            </div>
+            <div class="btn-container" style="text-align: center; margin-top: 20px;">
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='https://github.com/vvikasreddy/Bitcoin-price-prediction'"
+              >
+                Github
+              </button>
+              <button class="arrow next">→</button>
+            </div>
+          </div>
+          </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
     </section>
 
-    <!-- Hire me section -->
-    <section class="bg-gray p-0 section">
-        <div class="container">
-            <div class="card bg-primary">
-                <div class="card-body text-light">
-                    <div class="row align-items-center">
-                        <div class="col-sm-9 text-center text-sm-left">
-                            <h5 class="mt-3">Hire Me For Your Project</h5>
-                            <p class="mb-3">Accusantium labore nostrum similique quisquam.</p>
-                        </div>
-                        <div class="col-sm-3 text-center text-sm-right">
-                            <button class="btn btn-light rounded">Hire Me!</button>
-                        </div>
-                    </div>
-                </div> 
-            </div>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:wh22215@umbc.edu">wh22215@umbc.edu</a></p>
         </div>
-    </section>      
-    <!-- End od Hire me section. -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="position-relative section">
-        <div class="container text-center">
-            <h6 class="subtitle">Contact</h6>
-            <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="contact text-left">
-                <div class="form">
-                    <h6 class="subtitle">Available 24/7</h6>
-                    <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-infos">
-                    <div class="item">
-                        <i class="ti-location-pin"></i>
-                        <div class="">
-                            <h5>Location</h5>
-                            <p> 12345 Fake ST NoWhere AB Country</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-mobile"></i>
-                        <div>
-                            <h5>Phone Number</h5>
-                            <p>(123) 456-7890</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-email"></i>
-                        <div class="mb-0">
-                            <h5>Email Address</h5>
-                            <p>info@website.com</p>
-                        </div>
-                    </div>
-                </div>                  
-            </div>
-        </div>  
-        <div id="map">
-            <iframe src="https://snazzymaps.com/embed/61257"></iframe>
-        </div>      
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vikasreddyvenkannagari/">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
-    <!-- End of Contact Section -->
-
-    <!-- Page Footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com" target="_blank">DevCRUD</a></p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="socials">
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </footer> 
-    <!-- End of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- steller js -->
-    <script src="assets/js/steller.js"></script>
-
-</body>
+      </nav>
+      <p>Copyright &#169; 2023 Vikas Reddy. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
