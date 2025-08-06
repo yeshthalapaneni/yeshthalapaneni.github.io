@@ -1,74 +1,49 @@
-# Welcome to your Lovable project
+# 🌐 yeshthalapaneni.github.io
 
-## Project info
+Welcome to *Yeshwanth Thalapaneni’s* personal website — a space dedicated to showcasing expertise in **5G‑NR validation**, **data science**, and **ML projects** based on hands‑on experience and professional contributions.:contentReference[oaicite:1]{index=1}
 
-**URL**: https://lovable.dev/projects/24b07233-cb7a-445f-86ea-28a45dc37072
+---
 
-## How can I edit this code?
+## About Me
 
-There are several ways of editing your application.
+- **Name:** Yeshwanth Thalapaneni  
+- **Current Role:** 5G‑NR Validation Engineer at Nokia, with over 7 years of experience in LTE/5G protocol testing, UE & RAN validation.:contentReference[oaicite:2]{index=2}  
+- **Education:** Studied at SRM Institute of Science and Technology.:contentReference[oaicite:3]{index=3}  
+- **Contact:** [yeshthalapaneni@gmail.com](mailto:yeshthalapaneni@gmail.com) / [yashwanth.thalapaneni@alcatel-lucent.com](mailto:yeshwanth.thalapaneni@alcatel-lucent.com):contentReference[oaicite:4]{index=4}  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/24b07233-cb7a-445f-86ea-28a45dc37072) and start prompting.
+## 🌟 Website Overview
 
-Changes made via Lovable will be committed automatically to this repo.
+At **yeshthalapaneni.github.io**, you’ll find:
 
-**Use your preferred IDE**
+- ✅ A clear showcase of professional background and technical skills.  
+- ✅ Visual highlights of past projects, data workflows, and ML pipeline screenshots.  
+- ✅ Blog-style posts or case studies (if applicable) detailing key learnings and technologies used.  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Built With
 
-Follow these steps:
+This site leverages modern web technologies for a seamless, performant experience:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Vite**
+- **React** & **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui**
+- **Hosted via GitHub Pages**, integrated with **Lovable.dev**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Development & Deployment
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+# Clone the repository
+git clone https://github.com/yeshthalapaneni/yeshthalapaneni.github.io.git
+
+# Install dependencies
+cd yeshthalapaneni.github.io
+npm install
+
+# Start the development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/24b07233-cb7a-445f-86ea-28a45dc37072) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-# yeshthalapaneni.github.io
