@@ -7,9 +7,6 @@ Welcome to *Yeshwanth Thalapaneni’s* personal website — a space dedicated to
 ## About Me
 
 - **Name:** Yeshwanth Thalapaneni  
-- **Current Role:** 5G‑NR Validation Engineer at Nokia, with over 7 years of experience in LTE/5G protocol testing, UE & RAN validation.:contentReference[oaicite:2]{index=2}  
-- **Education:** Studied at SRM Institute of Science and Technology.:contentReference[oaicite:3]{index=3}  
-- **Contact:** [yeshthalapaneni@gmail.com](mailto:yeshthalapaneni@gmail.com) / [yashwanth.thalapaneni@alcatel-lucent.com](mailto:yeshwanth.thalapaneni@alcatel-lucent.com):contentReference[oaicite:4]{index=4}  
 
 ---
 
