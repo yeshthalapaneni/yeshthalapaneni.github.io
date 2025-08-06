@@ -1,8 +1,6 @@
 # 🌐 yeshthalapaneni.github.io
 
-Welcome to *Yeshwanth Thalapaneni’s* personal website — a space dedicated to showcasing expertise in **5G‑NR validation**, **data science**, and **ML projects** based on hands‑on experience and professional contributions.:contentReference[oaicite:1]{index=1}
-
----
+Welcome to *Yeshwanth Thalapaneni’s* personal website #
 
 ## About Me
 
